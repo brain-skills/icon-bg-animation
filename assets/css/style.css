@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-section {
+#iconBgAnimation {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -18,29 +18,29 @@ section {
     overflow: hidden;
 }
 
-section .row {
+#iconBgAnimation .row {
     position: relative;
     width: 100%;
     display: flex;
     white-space: nowrap;
-    font-size: 32px;
+    font-size: 28px;
 }
 
-i {
+#iconBgAnimation i {
     color: rgba(0, 0, 0, 0.5);
-    transition: 1s;
+    transition: 1.3s;
     padding: 0 5px;
     user-select: none;
     cursor: default;
 }
 
-i:hover {
+#iconBgAnimation i:hover {
     transition: 0s;
-    color: #0f0;
-    text-shadow: 0 0 120px #0f0;
+    color: lime;
+    text-shadow: 0 0 60px lime;
 }
 
-section .row {
+#iconBgAnimation .row {
     animation: animate1 60s linear infinite;
     animation-delay: 1s;
 }
@@ -49,8 +49,7 @@ section .row {
     50% {transform: translateX(-50%);}
     100% {transform: translateX(0);}
 }
-
-section .row:nth-child(even) {
+#iconBgAnimation .row:nth-child(even) {
     animation: animate2 60s linear infinite;
     animation-delay: 1s;
 }
